@@ -3,7 +3,6 @@ A Python-based tool that analyzes Linux authentication logs to detect suspicious
 
 This project was built to help me learn cybersecurity concepts such as log parsing, failed authentication detection, and basic incident analysis.
 
----
 
 ## Features
 
@@ -20,7 +19,6 @@ This project was built to help me learn cybersecurity concepts such as log parsi
   - Accepted login count
 - Includes unit tests using `pytest`
 
----
 
 ## Project Structure
 
@@ -32,8 +30,6 @@ security-log-analyzer/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
----
 
 ## How to Run
 
