@@ -49,7 +49,7 @@ pytest test_parser.py
 
 ## Learning Goals
 
-- This project is designed to help learn:
+- This project is designed to help me learn:
   - How Linux authentication logs work
   - How SSH login attempts are recorded
   - How brute-force behavior appears in logs
