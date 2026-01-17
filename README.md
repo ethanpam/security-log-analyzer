@@ -31,6 +31,7 @@ security-log-analyzer/
 ├── LICENSE
 └── README.md
 
+
 ## How to Run
 
 ### Analyze the sample log file
@@ -39,9 +40,12 @@ security-log-analyzer/
 python analyze_file.py
 ```
 
-## Run tests
+### Run tests
 
-pytest
+```bash
+pytest test_parser.py
+```
+
 
 ## Learning Goals
 
@@ -51,6 +55,7 @@ pytest
   - How brute-force behavior appears in logs
   - How to extract structured security data from raw text
   - How basic security monitoring tools are built
+
 
 ## Roadmap
 
