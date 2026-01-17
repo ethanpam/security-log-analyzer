@@ -21,7 +21,7 @@ This project was built to help me learn cybersecurity concepts such as log parsi
 
 
 ## Project Structure
-
+```text
 security-log-analyzer/
 ├── parser.py # Parses individual authentication log lines
 ├── analyze_file.py # Reads a log file and summarizes events
@@ -30,7 +30,7 @@ security-log-analyzer/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
+```
 
 ## How to Run
 
