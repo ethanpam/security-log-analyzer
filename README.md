@@ -62,7 +62,7 @@ pytest test_parser.py
 - Planned improvements:
   - Count failed login attempts per IP address
   - Detect brute-force behavior using thresholds
-  - Assign severity levels (low / medium / high)
+  - Assign severity levels (🟢 low / 🟡 medium / 🔴 high)
   - Generate summary reports for basic incident triage
 
 
