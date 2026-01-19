@@ -1,0 +1,18 @@
+{
+  "alerts": [
+    {
+      "attempts": 3,
+      "ip": "192.168.1.10",
+      "severity": "MEDIUM"
+    }
+  ],
+  "failed_by_ip": {
+    "192.168.1.10": 3
+  },
+  "summary": {
+    "accepted_events": 1,
+    "failed_events": 3,
+    "lines_read": 4,
+    "parsed_events": 4
+  }
+}
