@@ -1,3 +1,4 @@
+import json
 from parser import parser
 
 lines = 0
@@ -29,6 +30,13 @@ print(f"Parsed events: {parsed_events}")
 print(f"Failed events: {failed}")
 print(f"Accepted events: {accepted}")
 
-print(f"Failed attempts by IP:")
-for ip, attempt in failed_by_ip.items():
-    print(f"{ip}: {attempt}")
+print("Alerts:")
+for ip, attempts in failed_by_ip.items():
+    if attempts <= 2:
+        severity = "🟢 LOW"
+    elif attempts <= 4:
+        severity = "🟡 MEDIUM"
+    else:
+        severity = "🔴 HIGH"
+
+    print(f"{ip}: {attempts} failed attempts - {severity}")
