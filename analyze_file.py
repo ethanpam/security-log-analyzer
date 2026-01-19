@@ -40,3 +40,15 @@ for ip, attempts in failed_by_ip.items():
         severity = "🔴 HIGH"
 
     print(f"{ip}: {attempts} failed attempts - {severity}")
+
+report = {
+    "summary": {
+        "lines_read": {lines},
+        "parsed_events": {parsed_events},
+        "failed_events": {failed},
+        "accepted_events": {accepted}
+    },
+    "failed_by_ip": None
+}
+with open("report.json", "w") as report_file:
+    report_file.write(json.dump())
