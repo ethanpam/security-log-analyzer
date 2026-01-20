@@ -55,7 +55,7 @@ pytest test_parser.py
 ```
 
 ## Expected Output
-'''bash
+```bash
 Lines read: 1000
 Parsed events: 1000
 Failed events: 881
@@ -72,7 +72,7 @@ Alerts:
 192.168.1.5: 1 failed attempts - LOW
 91.92.109.43: 38 failed attempts - HIGH
 10.0.0.22: 4 failed attempts - MEDIUM
-'''
+```
 
 ## Learning Goals
 
