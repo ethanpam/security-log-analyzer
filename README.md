@@ -4,6 +4,7 @@ A Python-based tool that analyzes Linux authentication logs to detect suspicious
 This project was built to help me learn cybersecurity concepts such as log parsing, failed authentication detection, and basic incident analysis.
 
 
+
 ## Features
 
 - Parses Linux authentication log entries (`auth.log`-style)
@@ -17,6 +18,13 @@ This project was built to help me learn cybersecurity concepts such as log parsi
   - Parsed authentication events
   - Failed login count
   - Accepted login count
+- Aggregates failed login attempts by IP address
+- Assigns severity levels based on thresholds:
+  - 🟢 LOW (1–2 failed attempts)
+  - 🟡 MEDIUM (3–4 failed attempts)
+  - 🔴 HIGH (5+ failed attempts)
+- Prints human-readable alerts to the terminal
+- Generates a structured JSON report (`report.json`) for basic incident triage
 - Includes unit tests using `pytest`
 
 
@@ -56,15 +64,12 @@ pytest test_parser.py
   - How to extract structured security data from raw text
   - How basic security monitoring tools are built
 
+## Test Data Disclaimer
 
-## Roadmap
-
-- Planned improvements:
-  - Count failed login attempts per IP address
-  - Detect brute-force behavior using thresholds
-  - Assign severity levels (🟢 low / 🟡 medium / 🔴 high)
-  - Generate summary reports for basic incident triage
-
+- The `sample_auth.log` file used for testing was generated using AI-assisted tools to resemble realistic Linux authentication logs.
+  - No real users, systems, or productions logs were used
+  - No real credentials or sensitive data are included
+  - The data is inteneded solely for development and demostration purposes
 
 ## License
 
