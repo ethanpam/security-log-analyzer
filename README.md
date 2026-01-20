@@ -54,6 +54,25 @@ python analyze_file.py
 pytest test_parser.py
 ```
 
+## Expected Output
+'''bash
+Lines read: 1000
+Parsed events: 1000
+Failed events: 881
+Accepted events: 30
+Alerts:
+10.0.0.8: 3 failed attempts - MEDIUM
+185.199.110.153: 160 failed attempts - HIGH
+198.51.100.24: 146 failed attempts - HIGH
+176.58.123.77: 141 failed attempts - HIGH
+192.168.1.10: 7 failed attempts - HIGH
+45.83.12.91: 208 failed attempts - HIGH
+103.214.5.17: 171 failed attempts - HIGH
+172.16.0.4: 2 failed attempts - LOW
+192.168.1.5: 1 failed attempts - LOW
+91.92.109.43: 38 failed attempts - HIGH
+10.0.0.22: 4 failed attempts - MEDIUM
+'''
 
 ## Learning Goals
 
@@ -63,6 +82,7 @@ pytest test_parser.py
   - How brute-force behavior appears in logs
   - How to extract structured security data from raw text
   - How basic security monitoring tools are built
+
 
 ## Test Data Disclaimer
 
