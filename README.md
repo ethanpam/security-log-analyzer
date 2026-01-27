@@ -74,6 +74,88 @@ Alerts:
 10.0.0.22: 4 failed attempts - MEDIUM
 ```
 
+## report.json
+```
+{
+  "alerts": [
+    {
+      "attempts": 3,
+      "ip": "10.0.0.8",
+      "severity": "MEDIUM"
+    },
+    {
+      "attempts": 160,
+      "ip": "185.199.110.153",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 146,
+      "ip": "198.51.100.24",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 141,
+      "ip": "176.58.123.77",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 7,
+      "ip": "192.168.1.10",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 208,
+      "ip": "45.83.12.91",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 171,
+      "ip": "103.214.5.17",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 2,
+      "ip": "172.16.0.4",
+      "severity": "LOW"
+    },
+    {
+      "attempts": 1,
+      "ip": "192.168.1.5",
+      "severity": "LOW"
+    },
+    {
+      "attempts": 38,
+      "ip": "91.92.109.43",
+      "severity": "HIGH"
+    },
+    {
+      "attempts": 4,
+      "ip": "10.0.0.22",
+      "severity": "MEDIUM"
+    }
+  ],
+  "failed_by_ip": {
+    "10.0.0.22": 4,
+    "10.0.0.8": 3,
+    "103.214.5.17": 171,
+    "172.16.0.4": 2,
+    "176.58.123.77": 141,
+    "185.199.110.153": 160,
+    "192.168.1.10": 7,
+    "192.168.1.5": 1,
+    "198.51.100.24": 146,
+    "45.83.12.91": 208,
+    "91.92.109.43": 38
+  },
+  "summary": {
+    "accepted_events": 30,
+    "failed_events": 881,
+    "lines_read": 1000,
+    "parsed_events": 1000
+  }
+}
+```
+
 ## Learning Goals
 
 - This project is designed to help me learn:
